@@ -1,7 +1,7 @@
-import './navbar.scss'
+import classes from'./styles.module.scss'
 
 export default function (){
     return(
-        <div className='navbar'>Navbar</div>
+        <div className={classes.navbar}>Navbar</div>
     )
 }

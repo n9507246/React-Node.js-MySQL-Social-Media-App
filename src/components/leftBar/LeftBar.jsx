@@ -1,7 +1,11 @@
-import './leftbar.scss'
+import classes from './styles.module.scss'
 
 export default function (){
     return(
-        <div className='leftbar'>leftbar</div>
+        <div className={classes.leftbar}>leftbar
+        
+            <div className={classes.content}>Content</div>
+        </div>
+
     )
 }

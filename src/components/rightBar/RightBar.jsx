@@ -1,7 +1,7 @@
-import './styles.scss'
+import clasess from './styles.module.scss'
 
 export default function (){
     return(
-        <div className='navbar'>RightBar</div>
+        <div className={clasess.rigthBar} >RightBar</div>
     )
 }
