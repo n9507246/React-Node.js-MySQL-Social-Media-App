@@ -1,4 +1,4 @@
-import './profile.scss'
+import classes from './styles.module.scss'
 
 function Profile() {
 

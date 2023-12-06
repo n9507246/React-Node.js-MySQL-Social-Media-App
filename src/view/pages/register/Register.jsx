@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
-import './register.scss'
+import classes from './styles.module.scss'
 
 function Register() {
 
   return (
-    <div className='register'>
-      <div className="card">
-        <div className="left">
+    <div className={classes.register}>
+      <div className={classes.card}>
+        <div className={classes.left}>
           <h1>My social</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae impedit rem repellat ea modi dolorum sequi deserunt nisi minus ipsa distinctio consequuntur, odio ullam eaque iusto dolores veritatis numquam. Reprehenderit!
@@ -16,7 +16,7 @@ function Register() {
             <button>Login</button>
           </Link>
         </div>
-        <div className="right">
+        <div className={classes.right}>
           <h1>Register</h1>
           <form>
             <input type="text" placeholder='Username' />

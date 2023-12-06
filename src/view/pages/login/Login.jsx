@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
-import './login.scss'
+import classes from './styles.module.scss'
 
 function Login() {
 
     return (
-      <div className='login'>
-        <div className="card">
-          <div className="left">
+      <div className={classes.login}>
+        <div className={classes.card}>
+          <div className={classes.left}>
             <h1>Hello word</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae impedit rem repellat ea modi dolorum sequi deserunt nisi minus ipsa distinctio consequuntur, odio ullam eaque iusto dolores veritatis numquam. Reprehenderit!
@@ -16,7 +16,7 @@ function Login() {
               <button>Register</button>
             </Link>
           </div>
-          <div className="right">
+          <div className={classes.right}>
             <h1>Login</h1>
             <form>
               <input type="text" placeholder='Username' />
