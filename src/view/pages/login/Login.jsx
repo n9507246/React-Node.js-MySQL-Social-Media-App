@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import classes from './styles.module.scss'
+import LoginBtn from '../../../components/loginBtn/loginBtn'
 
 function Login() {
 
@@ -21,7 +22,7 @@ function Login() {
             <form>
               <input type="text" placeholder='Username' />
               <input type="password" placeholder='Password' />
-              <button onClick={() => {sessionStorage.setItem('TOKEN', 'asss')}}>Login</button>
+              <LoginBtn/>
             </form>
           </div>
         </div>
