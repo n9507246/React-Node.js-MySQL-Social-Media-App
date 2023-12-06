@@ -21,7 +21,7 @@ function Login() {
             <form>
               <input type="text" placeholder='Username' />
               <input type="password" placeholder='Password' />
-              <button>Login</button>
+              <button onClick={() => {sessionStorage.setItem('TOKEN', 'asss')}}>Login</button>
             </form>
           </div>
         </div>
