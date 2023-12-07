@@ -85,6 +85,34 @@ export default function (){
                             <img src={Fund} alt=''/>
                             <span>Fund</span>
                         </div>
+                        <div className={classes.item}>
+                            <img src={Fund} alt=''/>
+                            <span>Fund</span>
+                        </div>
+                        <div className={classes.item}>
+                            <img src={Fund} alt=''/>
+                            <span>Fund</span>
+                        </div>
+                        <div className={classes.item}>
+                            <img src={Fund} alt=''/>
+                            <span>Fund</span>
+                        </div>
+                        <div className={classes.item}>
+                            <img src={Fund} alt=''/>
+                            <span>Fund</span>
+                        </div>
+                        <div className={classes.item}>
+                            <img src={Fund} alt=''/>
+                            <span>Fund</span>
+                        </div>
+                        <div className={classes.item}>
+                            <img src={Fund} alt=''/>
+                            <span>Fund</span>
+                        </div>
+                        <div className={classes.item}>
+                            <img src={Fund} alt=''/>
+                            <span>Fund</span>
+                        </div>  
                     </div>
                         
                 </div>
