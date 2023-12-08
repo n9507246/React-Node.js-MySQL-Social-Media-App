@@ -1,4 +1,6 @@
 import classes from './styles.module.scss'
+import './style.scss'
+
 import Friends from '@assets/1.png'
 import Groups from '@assets/2.png'
 import Market  from '@assets/3.png'
@@ -18,98 +20,98 @@ import Fund  from '@assets/13.png'
 
 export default function (){
     return(
-        <div className={classes.leftBar}>
+        <div className='leftBar'>
 
-            <div className={classes.container}>
-                <div className={classes.menu}>
-                    <div className={classes.user}>
+            <div className='container'>
+                <div className='menu'>
+                    <div className='user'>
                         <img src='https://cs7.pikabu.ru/post_img/big/2014/07/22/6/1406017582_1886645288.jpg' alt='https://nevateka.ru/upload/iblock/bfd/mcibvfdrfow139gharqpg3nlcgqdk8bn/0aa07cc1-2eab-47f2-8a5c-e147fa415dfd.png'/>
                         <span>John Doe</span>
                     </div>
-                    <div className={classes.item}>
+                    <div className='item'>
                         <img src={Friends} alt=''/>
                         <span>Friends</span>
                     </div>
-                    <div className={classes.item}>
+                    <div className='item'>
                         <img src={Groups} alt=''/>
                         <span>Groups</span>
                     </div>
-                    <div className={classes.item}>
+                    <div className='item'>
                         <img src={Market} alt=''/>
                         <span>Marketplace</span>
                     </div>
-                    <div className={classes.item}>
+                    <div className='item'>
                         <img src={Watch} alt=''/>
                         <span>Watch</span>
                     </div>
-                    <div className={classes.item}>
+                    <div className='item'>
                         <img src={Memories} alt=''/>
                         <span>Memories</span>
                     </div>
                     <hr/>
-                    <div className={classes.menu}>
+                    <div className='menu'>
                         <span>Your shortcuts</span>
-                        <div className={classes.item}>
+                        <div className='item'>
                             <img src={Events} alt=''/>
                             <span>Events</span>
                         </div>
-                        <div className={classes.item}>
+                        <div className='item'>
                             <img src={Gaming} alt=''/>
                             <span>Gaming</span>
                         </div>
-                        <div className={classes.item}>
+                        <div className='item'>
                             <img src={Gallery} alt=''/>
                             <span>Gallery</span>
                         </div>
-                        <div className={classes.item}>
+                        <div className='item'>
                             <img src={Videos} alt=''/>
                             <span>Videos</span>
                         </div>
-                        <div className={classes.item}>
+                        <div className='item'>
                             <img src={Messages} alt=''/>
                             <span>Messages</span>
                         </div>
                     </div>
                     <hr/>
-                    <div className={classes.menu}>
+                    <div className='menu'>
                         <span>Others</span>
-                        <div className={classes.item}>
+                        <div className='item'>
                             <img src={Tutorials} alt=''/>
                             <span>Tutorials</span>
                         </div>
-                        <div className={classes.item}>
+                        <div className='item'>
                             <img src={Courses} alt=''/>
                             <span>Courses</span>
                         </div>
-                        <div className={classes.item}>
+                        <div className='item'>
                             <img src={Fund} alt=''/>
                             <span>Fund</span>
                         </div>
-                        <div className={classes.item}>
+                        <div className='item'>
                             <img src={Fund} alt=''/>
                             <span>Fund</span>
                         </div>
-                        <div className={classes.item}>
+                        <div className='item'>
                             <img src={Fund} alt=''/>
                             <span>Fund</span>
                         </div>
-                        <div className={classes.item}>
+                        <div className='item'>
                             <img src={Fund} alt=''/>
                             <span>Fund</span>
                         </div>
-                        <div className={classes.item}>
+                        <div className='item'>
                             <img src={Fund} alt=''/>
                             <span>Fund</span>
                         </div>
-                        <div className={classes.item}>
+                        <div className='item'>
                             <img src={Fund} alt=''/>
                             <span>Fund</span>
                         </div>
-                        <div className={classes.item}>
+                        <div className='item'>
                             <img src={Fund} alt=''/>
                             <span>Fund</span>
                         </div>
-                        <div className={classes.item}>
+                        <div className='item'>
                             <img src={Fund} alt=''/>
                             <span>Fund</span>
                         </div>  

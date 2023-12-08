@@ -5,7 +5,7 @@ import RightBar from "@components/rightBar/rightBar";
 
 export default function DefaultLayout(){
     return(
-        <>
+        <div className="theme-dark">
             <Navbar/>
             <div style={{display:'flex'}}>
                 <LeftBar/>
@@ -14,6 +14,6 @@ export default function DefaultLayout(){
                 </div>
                 <RightBar/>
             </div>
-        </>
+        </div>
     )
 }
