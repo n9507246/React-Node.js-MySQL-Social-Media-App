@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import classes from './styles.module.scss'
-import LoginBtn from '../../../components/loginBtn/loginBtn'
+import LoginBtn from '@components/loginBtn/loginBtn'
 
 function Login() {
 

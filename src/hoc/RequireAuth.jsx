@@ -1,11 +1,12 @@
 import { Navigate} from 'react-router-dom'
 import { Outlet } from "react-router-dom";
+import useAuth from '@hooks/AuthHook';
 
 export default function ({children}){
 
-    const user = sessionStorage.getItem('TOKEN');
-
-    if(user === null){
+    const {currentUser} = useAuth()
+    
+    if(currentUser === null){
         return <Navigate to='/login' state={{from: location.pathname}}/>
     }
     else{
