@@ -17,13 +17,18 @@
         span{
             position: absolute;
             bottom: 10px;
-            left: 10px;
+            left: 0;
             color: white;
             font-weight: 500;
+            width: 100%;
+            padding: 3px;
+            background-color: #00000041;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
         button{
             position: absolute;
-            bottom: 40px;
+            bottom: 50px;
             left: 10px;
             color: white;
             background-color: #5271ff;
