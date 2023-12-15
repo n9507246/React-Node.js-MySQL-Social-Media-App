@@ -1,4 +1,6 @@
-import LogoutBtn from '../../../components/logoutBtn/logoutBtn'
+import LogoutBtn from '@components/logoutBtn/logoutBtn'
+import Stories from '@components/stories/Stories'
+import Posts from '@components/posts/Posts'
 import classes from './styles.module.scss'
 import './styles.scss'
 
@@ -9,40 +11,9 @@ function Home() {
     return (
       <>
       <div className='home'>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
-        <h1>Home</h1>
+        <Stories/>
+        <Posts/>        
+        {/* <Posts/> */}
         <LogoutBtn/>
       </div>
 

@@ -11,7 +11,12 @@ export const AuthContextProvider = ({children}) => {
     }, [currentUser])
 
     const login = () => {
-        setCurrentUser({id: 1, name: 'BAD ASS', profile_picture: 'https://cs7.pikabu.ru/post_img/big/2014/07/22/6/1406017582_1886645288.jpg'})
+        setCurrentUser(
+            {
+                id: 1, 
+                name: 'BAD ASS', 
+                profile_picture: 'https://yobte.ru/uploads/posts/2019-11/znojnye-krasotki-113-foto-22.jpg'
+            })
     } 
     const logout = () => {
         setCurrentUser(null)
