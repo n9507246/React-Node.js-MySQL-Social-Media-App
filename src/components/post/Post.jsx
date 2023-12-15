@@ -17,7 +17,7 @@ export default function({data}){
         <div className='post'>
             <div className="container">
                 <div className="user">
-                    <div className="userInfo">
+                    <div className="post_userInfo">
                         <img src={data.profile_picture} />
                         <div className="details">
                             <Link to={`/profile/${data.userId}`} style={{textDecoration: 'none', color: 'inherit'}}>
