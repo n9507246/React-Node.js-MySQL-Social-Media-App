@@ -43,7 +43,7 @@ export default function (){
                 <PersonOutlinedIcon/>
                 <EmailOutlinedIcon/>
                 <NotificationsOutlinedIcon/>
-                <ProfileCircle className='user'userData={currentUser}/>
+                <ProfileCircle className='user' userData={currentUser}/>
             </div>
         </div>
     )

@@ -10,7 +10,7 @@ export default function(){
     ]
     return(
         
-        <div class='posts'>
+        <div className='posts'>
             {posts.map(postData => <Post data={postData} key={postData.id} /> )}
         </div>
     )
