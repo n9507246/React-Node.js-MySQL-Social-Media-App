@@ -1,3 +1,10 @@
+import { Link } from 'react-router-dom';
+import { useContext } from "react";
+import { DarkModeContext } from "@context/darkModeContext";
+import useAuth from '@hooks/AuthHook'
+
+import './styles.scss';
+
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import GridViewOutlinedIcon from '@mui/icons-material/GridViewOutlined';
@@ -6,16 +13,12 @@ import NotificationsOutlinedIcon from '@mui/icons-material/NotificationsOutlined
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import { Link } from 'react-router-dom';
-import { useContext } from "react";
-import { DarkModeContext } from "@context/darkModeContext";
-
-import './styles.scss';
+import ProfileCircle from '@components/profileCircle/ProfileCircle';
 
 
 export default function (){
     const {darkMode, toggle} = useContext(DarkModeContext)
-    
+    const {currentUser} = useAuth()
     return(
         <div className='navbar'>
             <div className='left'>
@@ -40,10 +43,7 @@ export default function (){
                 <PersonOutlinedIcon/>
                 <EmailOutlinedIcon/>
                 <NotificationsOutlinedIcon/>
-                <div className='user'>
-                    <img src='https://cs7.pikabu.ru/post_img/big/2014/07/22/6/1406017582_1886645288.jpg' alt='https://nevateka.ru/upload/iblock/bfd/mcibvfdrfow139gharqpg3nlcgqdk8bn/0aa07cc1-2eab-47f2-8a5c-e147fa415dfd.png'/>
-                    <span>John Doe</span>
-                </div>
+                <ProfileCircle className='user'userData={currentUser}/>
             </div>
         </div>
     )

@@ -15,8 +15,8 @@ import Tutorials  from '@assets/11.png'
 import Courses  from '@assets/12.png'
 import Fund  from '@assets/13.png'
 
-
-
+import ProfileCircle from '@components/profileCircle/ProfileCircle';
+import useAuth from '@hooks/AuthHook'
 
 export default function (){
     return(
@@ -24,10 +24,7 @@ export default function (){
 
             <div className='container'>
                 <div className='menu'>
-                    <div className='user'>
-                        <img src='https://cs7.pikabu.ru/post_img/big/2014/07/22/6/1406017582_1886645288.jpg' alt='https://nevateka.ru/upload/iblock/bfd/mcibvfdrfow139gharqpg3nlcgqdk8bn/0aa07cc1-2eab-47f2-8a5c-e147fa415dfd.png'/>
-                        <span>John Doe</span>
-                    </div>
+                    <ProfileCircle className='user' userData={useAuth().currentUser}/>
                     <div className='item'>
                         <img src={Friends} alt=''/>
                         <span>Friends</span>
