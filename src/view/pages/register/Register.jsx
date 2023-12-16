@@ -18,13 +18,22 @@ function Register() {
         </div>
         <div className={classes.right}>
           <h1>Register</h1>
-          <form>
-            <input type="text" placeholder='Username' />
-            <input type="email" placeholder='Email' />
-            <input type="password" placeholder='Username' />
-            <input type="text" placeholder='Name' />
-            <button>Register</button>
-          </form>
+          <div>
+            <form>
+              <input type="text" placeholder='Username' />
+              <input type="email" placeholder='Email' />
+              <input type="password" placeholder='Username' />
+              <input type="text" placeholder='Name' />
+              <button>Register</button>
+            </form>
+            <div className={classes.login_link_mobile}>
+                Already have an account? 
+                <Link  to='/login'>
+                  Login
+                </Link>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>

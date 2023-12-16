@@ -23,6 +23,13 @@ function Login() {
               <input type="text" placeholder='Username' />
               <input type="password" placeholder='Password' />
               <LoginBtn/>
+              <div className={classes.register_link_mobile}>
+                Not registered yet? 
+                <Link  to='/register'>
+                  Registration
+                </Link>
+              </div>
+
             </form>
           </div>
         </div>

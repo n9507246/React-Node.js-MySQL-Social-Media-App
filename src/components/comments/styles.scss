@@ -15,6 +15,9 @@
                 border: 1px solid themed('border');
                 background-color: transparent;
                 color: themed('textColor');
+                @include mobile{
+                    width: 100px;
+                }
             }
             button{
                 border: none;

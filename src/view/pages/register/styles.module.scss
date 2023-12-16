@@ -1,10 +1,28 @@
+@import '@/style.scss';
 .register{
     height: 100vh;
     background-color: rgb(193,190,255);
     display: flex;
     align-items: center;
     justify-content: center;
+    @include mobile{
+        background: linear-gradient(rgba(39,11,96,0.5),rgba(39,11,96,0.5)),  url('https://kartinkof.club/uploads/posts/2022-05/1653715199_8-kartinkof-club-p-kartinki-veselikh-lyudei-ili-ulibayushchik-9.jpg') center;
+        background-size:cover;
+    }
+    @include tablet{
+        background: linear-gradient(rgba(39,11,96,0.5),rgba(39,11,96,0.5)),  url('https://kartinkof.club/uploads/posts/2022-05/1653715199_8-kartinkof-club-p-kartinki-veselikh-lyudei-ili-ulibayushchik-9.jpg') center;
+        background-size:cover;
+    }
+            
     .card{
+        @include mobile{
+            width: 80%;
+            min-height: 300px;
+           
+        }
+        @include tablet{
+            min-height: 400px;
+        }
         width: 50%;
         display: flex;
         background-color: white;
@@ -13,6 +31,12 @@
         min-height: 600px;
         overflow: hidden;
         .left{
+            @include mobile{
+                display: none;
+            }
+            @include tablet{
+                display: none;
+            }
             flex:1;
             background: linear-gradient(rgba(39,11,96,0.5),rgba(39,11,96,0.5)), url('https://kartinkof.club/uploads/posts/2022-05/1653715199_8-kartinkof-club-p-kartinki-veselikh-lyudei-ili-ulibayushchik-9.jpg') center;
             background-size: cover;
@@ -43,6 +67,13 @@
             }
         }
         .right{
+            @include mobile{
+                padding: 30px;
+            }
+            @include tablet{
+                padding: 30px;
+            }
+
             flex:1;
             padding: 50px;
             display: flex;
@@ -75,5 +106,27 @@
 
         }
 
+    }
+}
+.login_link_mobile{
+    display: none;
+    margin-top: 20px;
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        justify-content: center;
+        align-items: center;
+    }
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        justify-content: center;
+        align-items: center;
+    }
+    a{
+        text-decoration: none;
+        color: #7974e0;
     }
 }

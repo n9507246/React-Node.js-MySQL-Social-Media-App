@@ -34,17 +34,27 @@
                     width: 500px;
                     background-color: transparent;
                     color: themed('textColor');
+                    @include mobile{
+                        display:none
+                    }
+                    @include tablet{
+                        width: 200px;
+                    }
                 }
             }
         }
         .search{
             display: flex;
             align-items: center;     
+
         }
         .right{
             display: flex;
             align-items: center;
             gap: 20px;
+            @include mobile{
+                display:none
+            }
             .user{
                 display: flex;
                 align-items: center;
