@@ -14,6 +14,7 @@ import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import ProfileCircle from '@components/profileCircle/ProfileCircle';
+import MyLink from '@components/myLink/myLink';
 
 
 export default function (){
@@ -22,9 +23,9 @@ export default function (){
     return(
         <div className='navbar'>
             <div className='left'>
-                <Link to='/'>
+                <MyLink to='/'>
                     <span>My social</span>
-                </Link>
+                </MyLink>
                 <HomeOutlinedIcon/>
                 {
                     darkMode ? <DarkModeOutlinedIcon onClick={toggle}/> 
@@ -40,7 +41,7 @@ export default function (){
                 </div>
             </div>
             <div className='right'>
-                <Link to='/profile/1'><PersonOutlinedIcon/></Link>
+                <MyLink to='/profile/1'><PersonOutlinedIcon/></MyLink>
                 <EmailOutlinedIcon/>
                 <NotificationsOutlinedIcon/>
                 <ProfileCircle className='user' userData={currentUser}/>
