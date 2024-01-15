@@ -13,6 +13,9 @@
         top: 0;
         background-color: themed('bg');
         color: themed('textColor');
+        a{
+            text-decoration: none;
+        }
         .left{
             display: flex;
             align-items: center;  
@@ -68,6 +71,9 @@
                 }
                 
             }
+            // .profile_btn:active a{
+            //     color: black;
+            // }
         }
     }
 }

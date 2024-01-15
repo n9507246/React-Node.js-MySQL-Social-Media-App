@@ -22,7 +22,7 @@ export default function (){
     return(
         <div className='navbar'>
             <div className='left'>
-                <Link to='/'  style={{textDecoration: 'none'}}>
+                <Link to='/'>
                     <span>My social</span>
                 </Link>
                 <HomeOutlinedIcon/>
@@ -40,7 +40,7 @@ export default function (){
                 </div>
             </div>
             <div className='right'>
-                <div >
+                <div className='profile_btn'>
                     <Link to='/profile/1'><PersonOutlinedIcon/></Link>
                 </div>
                 <EmailOutlinedIcon/>
