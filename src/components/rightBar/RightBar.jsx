@@ -1,9 +1,11 @@
 import clasess from './styles.module.scss'
 import './styles.scss'
+import useUpdateScroll from '@hooks/UpdateScroll'
 
 export default function (){
+    const componentToUpdateScroll = useUpdateScroll()
     return(
-        <div className='rigthBar' >
+        <div ref={componentToUpdateScroll} className='rigthBar' >
             <div className='container'>
                 <div className='item'>
                     <span>Suggestions For You</span>

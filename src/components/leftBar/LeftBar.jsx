@@ -17,10 +17,14 @@ import Fund  from '@assets/13.png'
 
 import ProfileCircle from '@components/profileCircle/ProfileCircle';
 import useAuth from '@hooks/AuthHook'
+import useUpdateScroll from '@hooks/UpdateScroll'
 
 export default function (){
+
+    const componentToUpdateScroll = useUpdateScroll()
+    
     return(
-        <div className='leftBar'>
+        <div ref={componentToUpdateScroll} className='leftBar'>
 
             <div className='container'>
                 <div className='menu'>
