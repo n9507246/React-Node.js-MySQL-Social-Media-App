@@ -23,9 +23,9 @@ export default function (){
     return(
         <div className='navbar'>
             <div className='left'>
-                <MyLink to='/'>
+                <Link to='/'>
                     <span>My social</span>
-                </MyLink>
+                </Link>
                 <HomeOutlinedIcon/>
                 {
                     darkMode ? <DarkModeOutlinedIcon onClick={toggle}/> 
@@ -41,7 +41,7 @@ export default function (){
                 </div>
             </div>
             <div className='right'>
-                <MyLink to='/profile/1'><PersonOutlinedIcon/></MyLink>
+                <Link to='/profile/1'><PersonOutlinedIcon/></Link>
                 <EmailOutlinedIcon/>
                 <NotificationsOutlinedIcon/>
                 <ProfileCircle className='user' userData={currentUser}/>

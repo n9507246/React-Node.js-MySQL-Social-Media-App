@@ -4,18 +4,19 @@ import LeftBar from "@components/leftBar/leftBar";
 import RightBar from "@components/rightBar/rightBar";
 import { DarkModeContext } from "@context/darkModeContext";
 import useUpdateScroll from '@hooks/UpdateScroll'
+import { useContext } from "react";
 
 export default function DefaultLayout(){
     
 
     const {darkMode} = useContext(DarkModeContext)
-    const componentToUpdateScroll = useUpdateScroll()
+
     return(
         <div className={`theme-${darkMode ? 'dark' : 'light'}`}>
             <Navbar/>
             <div style={{display:'flex'}}>
                 <LeftBar/>
-                <div ref={componentToUpdateScroll} style={{flex: 6 }}>
+                <div  style={{flex: 6 }}>
                     <Outlet/>
                 </div>
                 <RightBar/>

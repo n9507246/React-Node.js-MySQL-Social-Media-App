@@ -7,7 +7,7 @@ import { useRef} from 'react'
 //Для того что бы изменить это поведение я методом тыка нашел такой способ(КОСТЫЛЬ)
 
 //Данный хук вызвращает ссылку на элемент для которого нужно будет обновить скрол
-export default function useUpdateScroll(){
+export default function useUpdateScroll(props){
 
     useLocation() //к сожалению я не знаю почему, но без данного хука это работать не будет 
     
@@ -15,6 +15,8 @@ export default function useUpdateScroll(){
     if(componentToUpdate.current !== undefined) { //если текущий DOM-элемент существует 
         componentToUpdate.current.scrollTo(0, 0) // обновляем для него скрол
     }
+
+    window.scroll(0,0) //так же обновляем положение экрана 
 
     return componentToUpdate //возвращаем элемент
 
