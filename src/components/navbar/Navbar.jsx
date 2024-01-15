@@ -40,7 +40,9 @@ export default function (){
                 </div>
             </div>
             <div className='right'>
-                <PersonOutlinedIcon/>
+                <div >
+                    <Link to='/profile/1'><PersonOutlinedIcon/></Link>
+                </div>
                 <EmailOutlinedIcon/>
                 <NotificationsOutlinedIcon/>
                 <ProfileCircle className='user' userData={currentUser}/>
